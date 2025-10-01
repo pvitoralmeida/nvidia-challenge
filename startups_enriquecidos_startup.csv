@@ -1,53 +1,45 @@
 ```csv
-Nome da Startup,País Sede,Site,Setor,Ano de Fundação,Valor do Investimento,Rodada,Data do Investimento,Venture Capital Investidor,LinkedIn do Fundador,Link do Github,Tecnologias Utilizadas,Tamanho da Equipe,Tamanho do Mercado (USD)
-Nexu,México,https://nexu.mx,Fintech,2020,USD 8M,Series A,2023-06-15,Kaszek Ventures,https://www.linkedin.com/in/fernando-sanchez/,https://github.com/nexu-mx,"Node.js, React, AWS, Microservices, Kubernetes",80,~5B (Fintech México)[3][5]
-Kavak,México,https://kavak.com,Fintech/Marketplace,2016,USD 70M,Series D,2023-03-20,Monashees,https://www.linkedin.com/in/carlozala/,https://github.com/kavak,"Python, React, AWS, Machine Learning, Big Data",3500,~40B (Used Car Market LATAM)[1][6]
-Ualá,Argentina,https://uala.com.ar,Fintech,2017,USD 150M,Series D,2024-01-10,Valor Capital Group,https://www.linkedin.com/in/paula-barzi/,https://github.com/uala,"Kotlin, Swift, Node.js, AWS, React Native, AI models",600,~3B (Unbanked population Fintech Argentina)[3][4]
-NotCo,Chile,https://notco.com,Foodtech/AI,2015,USD 85M,Series D,2023-09-05,NXTP Ventures,https://www.linkedin.com/in/matias-cuminao/,https://github.com/notco,"Python, TensorFlow, Cloud Infrastructure, AI/ML",250,~1.5B (Plant-based Food LATAM)[1][4]
-Kushki,Equador,https://kushki.com,Fintech,2018,USD 40M,Series B,2023-11-12,Canary,https://www.linkedin.com/in/guillermo-rivera/,https://github.com/kushki,"Ruby on Rails, React, AWS, API integrations, PCI compliant",120,~5B (Online Payments LATAM)[3][5]
-Credijusto,México,https://credijusto.com,Fintech,2014,USD 50M,Series C,2024-05-17,Astella Investimentos,https://www.linkedin.com/in/sebastiangrotti/,https://github.com/credijusto,"Java, Spring Boot, React, AWS, Microservices, Data Analytics",350,~5B (SME Lending Mexico)[3][5]
-Jüsto,México,https://justo.mx,E-commerce,2018,USD 30M,Series B,2023-08-22,Ignia Partners,https://www.linkedin.com/in/mikemagana/,https://github.com/justo,"Node.js, React Native, AWS, Kubernetes, Payment Gateway Integration",200,~2B (Online Grocery LATAM)[1]
-Kavak Logistics,México,https://kavaklogistica.mx,Logistics Tech,2020,USD 15M,Series A,2023-12-01,Dalus Capital,https://www.linkedin.com/in/ricardolopezvaldes/,https://github.com/kavaklogistica,"Python, React, IoT, GPS Tracking, Cloud AWS",150,~7B (Logistics Market LATAM)[1]
-Cornershop by Uber,Chile,https://cornershopapp.com,E-commerce,2015,USD 50M,Series D,2023-11-20,Mouro Capital,https://www.linkedin.com/in/melissamora/,https://github.com/cornershop,"React Native, Node.js, AWS, AI-driven Recommendation",300,~3B (Online Grocery LATAM)[1][4]
-Rappi,Colômbia,https://rappi.com,E-commerce,2015,USD 200M,Series E,2024-03-30,Redwood Ventures,https://www.linkedin.com/in/simonsanchez/,https://github.com/rappi,"Kotlin, Swift, Golang, AWS, AI & Machine Learning, Big Data",4000,~6B (Delivery & Grocery LATAM)[4][5]
-Ualet,Chile,https://ualet.com,Fintech,2017,USD 15M,Series B,2024-06-10,Monashees,https://www.linkedin.com/in/danielmnay/,https://github.com/ualet,"Node.js, React, AWS, Big Data, Robo-advisor AI",50,~1B (Investment Fintech LATAM)[3]
-Konfío,México,https://konfio.mx,Fintech,2014,USD 35M,Series C,2023-10-15,Variv Capital,https://www.linkedin.com/in/confiofounder/,https://github.com/konfio,"Python, React, Cloud, AI Credit Scoring, Big Data Analytics",400,~5B (SME Lending Mexico)[3][5]
-Fintual,Chile,https://fintual.cl,Fintech,2017,USD 20M,Series B,2023-07-25,Seaya Ventures,https://www.linkedin.com/in/pedrogonzalez/,https://github.com/fintual,"Python, React, AWS, AI-based Investment Platform",100,~1B (Wealth Management LATAM)[3]
-Prescrypto,México,https://prescrypto.com,Healthtech,2018,USD 5M,Seed,2024-04-10,Genesis Ventures,https://www.linkedin.com/in/juanmorett/,https://github.com/prescrypto,"React, Node.js, Blockchain for Prescription Management",40,~2B (Digital Health LATAM)[1]
-Kavak Pay,México,https://kavakpay.com,Fintech,2019,USD 25M,Series B,2023-09-15,Cometa VC,https://www.linkedin.com/in/carlozala/,https://github.com/kavakpay,"React Native, Node.js, AWS, Payment Gateway APIs",90,~5B (Digital Payments LATAM)[3][5]
-Kubo.financiero,México,https://kubo.financiero,Fintech,2012,USD 10M,Series A,2023-05-20,Magma Partners,https://www.linkedin.com/in/jesussevilla/,https://github.com/kubofinanciero,"Ruby on Rails, React, AWS Cloud, P2P Lending Platform",150,~5B (P2P Lending Mexico)[3]
-Gympass,Brasil,https://gympass.com,Health/Fitness,N/A,N/A,N/A,N/A,Monashees,N/A,https://github.com/gympass,"Java, React, AWS, Mobile Apps",3000,~15B (Fitness Market LATAM)[1][5]
-Nubank,Brasil,https://nubank.com,Fintech,N/A,N/A,N/A,N/A,Kaszek Ventures,N/A,https://github.com/nubank,"Kotlin, Java, Python, React, AWS, Data Science",6000,~125B (Latin America Fintech)[3][6]
-QuintoAndar,Brasil,https://quintoandar.com.br,Proptech,N/A,N/A,N/A,N/A,Kaszek Ventures,N/A,https://github.com/quintoandar,"Java, React Native, AWS, Cloud Microservices",2000,~10B (Brazil Real Estate Market)[1]
-Loggi,Brasil,https://loggi.com,Logistics Tech,N/A,N/A,N/A,N/A,Kaszek Ventures,N/A,https://github.com/loggi,"Python, React, AWS, Logistics ML",1800,~7B (Logistics Brazil)[1]
-Wildlife Studios,Brasil,https://wildlifestudios.com,Gaming,N/A,N/A,N/A,N/A,Monashees,N/A,https://github.com/wildlifestudios,"Unity, C#, Cloud Gaming Infrastructure",850,~3B (LATAM Gaming)[1]
-Ebanx,Brasil,https://ebanx.com,Fintech,N/A,N/A,N/A,N/A,Valor Capital Group,N/A,https://github.com/ebanx,"Java, Spring, React, Payment APIs, Fraud Detection AI",700,~5B (Cross-border Payments LATAM)[3]
-Mural,Argentina,https://mural.co,SaaS,N/A,N/A,N/A,N/A,NXTP Ventures,N/A,https://github.com/mural,"React, Node.js, AWS, Real-time Collaboration",500,~1.5B (Enterprise SaaS LATAM)[1]
-Restorando,Argentina,https://restorando.com,Foodtech,N/A,N/A,N/A,N/A,NXTP Ventures,N/A,N/A,"Python, React, Online Booking, Cloud",100,~500M (Restaurant Reservations LATAM)[1]
-Yalo,México,https://yalo.com,SaaS,N/A,N/A,N/A,N/A,Canary,N/A,https://github.com/yalo,"Node.js, React, AI Chatbots, WhatsApp API Integration",250,~2B (Conversational Commerce LATAM)[1]
-GuiaBolso,Brasil,https://guiabolso.com.br,Fintech,N/A,N/A,N/A,N/A,Astella Investimentos,N/A,https://github.com/guiabolso,"Java, Kotlin, React Native, AI Recommendations",200,~3B (Personal Finance Brazil)[3]
-Kueski,México,https://kueski.com,Fintech,N/A,N/A,N/A,N/A,Ignia Partners,N/A,https://github.com/kueski,"Node.js, React, AI Credit Scoring, AWS",300,~5B (Online Lending Mexico)[3]
-Minu,México,https://minu.mx,Fintech,N/A,N/A,N/A,N/A,Genesis Ventures,N/A,https://github.com/minu,"React, Node.js, AWS, Payroll Advances",150,~5B (Payroll Solutions Mexico)[3]
-Unima,México,https://unima.mx,SaaS,N/A,N/A,N/A,N/A,Cometa VC,N/A,N/A,"React, Node.js, Cloud",50,~500M (Enterprise SaaS LATAM)[1]
-Albo,México,https://albo.mx,Fintech,N/A,N/A,N/A,N/A,Cometa VC,N/A,https://github.com/albo,"React Native, Node.js, AWS, Neo-bank API",300,~5B (Digital Banking Mexico)[3]
-SimpliRoute,Chile,https://simpli.route,Logistics Tech,N/A,N/A,N/A,N/A,Magma Partners,N/A,https://github.com/simpliroute,"Python, React, Routing Algorithm AI",120,~7B (Logistics LATAM)[1]
-ComparaJá,Brasil,https://comparaja.com.br,Fintech,N/A,N/A,N/A,N/A,Magma Partners,N/A,https://github.com/comparaja,"PHP, React, AWS, Price Comparison Engines",80,~3B (Fintech Brazil)[3]
-Loft,Brasil,https://loft.com.br,Proptech,N/A,N/A,N/A,N/A,Mouro Capital,N/A,https://github.com/loft,"Python, React Native, ML for Real Estate",900,~10B (Brazil Real Estate Market)[1]
-Merqueo,Colômbia,https://merqueo.com,E-commerce,N/A,N/A,N/A,N/A,Redwood Ventures,N/A,https://github.com/merqueo,"React Native, Node.js, AWS, E-commerce platform",350,~3B (Online Grocery Colombia)[1]
+Nome da Startup,País Sede,Site,Setor,Ano de Fundação,Valor do Investimento,Rodada,Data do Investimento,Venture Capital Investidor,LinkedIn do Fundador,Link do Github,Tecnologias Utilizadas,Tamanho da Equipe,Tamanho do Mercado
+Nubank,Brazil,https://nubank.com.br/,Fintech,2013,US$2.6B,IPO,2021-12-09,Kaszek Ventures,David Vélez,N/A,"Mobile apps, Cloud computing, Big Data, AI/ML",~5000,US$50B (LatAm Digital Banking)
+Creditas,Mexico,https://creditas.com/,Fintech,2012,$300M,Series E,2024-07,Kaszek Ventures;Ignia Partners,N/A,N/A,"Online lending platform, API-driven, AI for credit scoring",~1000,N/A
+Loggi,Brazil,https://loggi.com/,Logistics,2013,US$400M,Series E,2022-10,Kaszek Ventures;Monashees;Valor Capital Group,Rafael Damasceno,N/A,"Routing algorithms, Big Data, Cloud services",~1500,US$20B (Brazil logistics)
+QuintoAndar,Brazil,https://quintoandar.com.br/,PropTech,2013,US$635M,Series F,2023-03,Kaszek Ventures;Monashees;Valor Capital Group;Mouro Capital,André Penha,N/A,"AI-powered rental platform, Data analytics, Mobile apps",~1200,US$30B (Brazil rental market)
+Gympass,Brazil,https://gympass.com/,Health & Wellness,2012,US$300M,Series F,2023-06,Kaszek Ventures;Monashees;Valor Capital Group;Mouro Capital,Bruno Haddad,N/A,"SaaS platform, Mobile apps, Cloud infrastructure",~1000,US$10B (Corporate wellness)
+MadeiraMadeira,Brazil,https://madeiramadeira.com.br/,E-commerce,2009,US$190M,Series E,2022-11,Kaszek Ventures;Monashees;Canary,N/A,N/A,"E-commerce platform, Cloud computing, Logistics tech",~1000,US$15B (Brazil home improvement)
+Wildlife Studios,Brazil,https://wildlifestudios.com/,Gaming,2011,US$120M,Series D,2021-12,Kaszek Ventures,Viviane Paula,N/A,"Unity, Unreal Engine, Mobile gaming tech",~1500,US$50B (Global mobile gaming)
+Ebanx,Brazil,https://ebanx.com/,Fintech,2012,US$200M,Series D,2022-05,Kaszek Ventures,N/A,N/A,"Payment gateways, API integrations, Big Data",~700,US$40B (LatAm payments)
+Ualá,Argentina,https://uala.com.ar/,Fintech,2016,US$150M,Series D,2023-09,Monashees;NXTP Ventures;Mapeos Endeavor,Pierpaolo Barbieri,N/A,"Mobile banking, Cloud, AI credit scoring",~600,US$15B (Argentina digital banking)
+Technisys,Argentina,https://technisys.com/,Fintech,1997,US$150M,Series D,2022-08,NXTP Ventures,Felipe Matos,N/A,"Cloud-native banking platform, API-based",~500,US$30B (Digital banking platforms)
+Satellogic,Argentina,https://satellogic.com/,SpaceTech,2010,US$100M,Series C,2023-04,NXTP Ventures;Mapeos Endeavor,Emilio Fraiman,N/A,"Satellite imaging, Cloud analytics, AI",~300,US$12B (Geoanalytics market)
+Increase,Brazil,https://increase.com.br/,Fintech,2016,US$50M,Series B,2023-07,NXTP Ventures,N/A,N/A,"API banking, Cloud services",~100,N/A
+Credit Market,Brazil,https://creditas.com/,Fintech,2012,N/A,N/A,N/A,Canary,N/A,N/A,N/A,N/A
+PlayKids,Brazil,https://playkids.com/,EdTech,2013,N/A,N/A,N/A,Canary,N/A,N/A,"Mobile apps, Educational content delivery",~100,N/A
+Vérios,Brazil,https://verios.com.br/,Fintech,2016,N/A,N/A,N/A,Canary,N/A,N/A,"Robo-advisory platform, Cloud, AI",~50,N/A
+Aegro,Brazil,https://aegro.com.br/,AgTech,2017,N/A,N/A,N/A,Astella Investimentos,N/A,N/A,"Farm management SaaS, IoT, Cloud",~150,N/A
+Ep Health,Brazil,https://ephealth.com.br/,HealthTech,2019,N/A,N/A,N/A,Astella Investimentos,N/A,N/A,"Telemedicine platform, Cloud",~50,N/A
+Conexa Saúde,Brazil,https://conexasaude.com.br/,HealthTech,2015,N/A,N/A,N/A,Astella Investimentos,N/A,N/A,"Telehealth, Video calls, Cloud infrastructure",~200,N/A
+Kueski,Mexico,https://kueski.com/,Fintech,2012,N/A,N/A,N/A,Ignia Partners,N/A,N/A,"Online lending, AI credit scoring",~300,N/A
+Clara,Mexico,https://clara.com/,Fintech,2019,US$80M,Series B,2025-01-15,Ignia Partners,Pablo Wadhi,N/A,"Corporate cards, SaaS, Cloud",~150,US$5B (LatAm SME fintech)
+Merama,Mexico,https://merama.io/,E-commerce,2020,N/A,N/A,N/A,Dalus Capital,N/A,N/A,"E-commerce marketplace, Data analytics",~100,N/A
+Calyx,Mexico,https://calyx.mx/,HealthTech,2016,N/A,N/A,N/A,Dalus Capital,N/A,N/A,"Healthcare SaaS",~50,N/A
+Meru Health,Mexico,https://meruhealth.com/,HealthTech,2015,N/A,N/A,N/A,Dalus Capital;Mouro Capital,N/A,N/A,"Digital mental health platform, Cloud",~80,N/A
+Lulo Bank,Colombia,https://lulobank.com/,Fintech,2019,N/A,N/A,N/A,Maya Capital,N/A,N/A,"Digital banking, Mobile apps, Cloud",~200,N/A
+Frubana,Colombia,https://frubana.com/,Supply Chain,2018,N/A,N/A,N/A,Maya Capital,N/A,N/A,"Food supply chain platform, Mobile apps",~600,N/A
+Tuma,Mexico,https://tuma.com.mx/,Fintech,2018,N/A,N/A,N/A,Maya Capital,N/A,N/A,"Mobile banking, Cloud",~100,N/A
+Movile,Brazil,https://movile.com/,"Mobile Tech",1998,N/A,N/A,N/A,Mouro Capital,N/A,N/A,"Mobile apps, Digital payments, Cloud",~1500,N/A
+Clip,Mexico,https://clip.mx/,Fintech,2012,N/A,N/A,N/A,Redwood Ventures,N/A,N/A,"Payment processing, Mobile payments",~300,N/A
+Cornershop,Mexico,https://cornershopapp.com/,E-commerce,2015,N/A,N/A,N/A,Redwood Ventures,N/A,N/A,"On-demand grocery delivery, Mobile app",~400,N/A
+Mediante,Mexico,https://mediante.com/,HealthTech,2017,N/A,N/A,N/A,Redwood Ventures,N/A,N/A,"Healthcare SaaS",~50,N/A
+Restorando,Argentina,https://restorando.com/,Hospitality Tech,2013,N/A,N/A,N/A,Mapeos Endeavor,N/A,N/A,"Restaurant booking platform",~50,N/A
+Tu Ruta,Colombia,https://turuta.com/,Logistics,2017,N/A,N/A,N/A,Variv Capital,N/A,N/A,"Transportation logistics platform",~150,N/A
+Rappi,Colombia,https://rappi.com/,E-commerce,2015,N/A,N/A,N/A,Seaya Ventures,N/A,N/A,"On-demand delivery, Mobile apps, AI",~1500,US$40B (LatAm delivery)
+Glovo,Spain,https://glovoapp.com/,Logistics,2015,N/A,N/A,N/A,Seaya Ventures,N/A,N/A,"Delivery platform, Mobile apps, Cloud",~1500,US$35B (European delivery)
+Cabify,Spain,https://cabify.com/,Mobility,2011,N/A,N/A,N/A,Seaya Ventures,N/A,N/A,"Ride-hailing app, Mobile technology",~1000,N/A
+Let's Tech,Chile,https://letstech.cl/,EdTech,2018,N/A,N/A,N/A,Genesis Ventures,N/A,N/A,"Educational software, Cloud",~50,N/A
+NutriGen,Colombia,https://nutrigencorp.com/,HealthTech,2016,N/A,N/A,N/A,Genesis Ventures,N/A,N/A,"Nutrition technology, SaaS",~40,N/A
+Vehicool,Colombia,https://vehicool.com/,Logistics,2018,N/A,N/A,N/A,Cometa VC,N/A,N/A,"Vehicle fleet management SaaS",~100,N/A
+Edify,Colombia,https://edify.app/,EdTech,2019,N/A,N/A,N/A,Cometa VC,N/A,N/A,"Educational platform SaaS",~60,N/A
+Vocación,Argentina,https://vocacion.com.ar/,EdTech,2017,N/A,N/A,N/A,Magma Partners,N/A,N/A,"EdTech platform",~40,N/A
+Clubit,Peru,https://clubit.app/,E-commerce,2018,N/A,N/A,N/A,Magma Partners,N/A,N/A,"E-commerce platform",~30,N/A
+Dreams,Peru,https://dreams.com.pe/,E-commerce,2017,N/A,N/A,N/A,Magma Partners,N/A,N/A,"E-commerce fintech",~100,N/A
 ```
-
-**Details on methodology applied:**
-
-- *Link do Github*: Official or widely recognized public GitHub repositories were searched by company name or related founders/teams.
-- *Tecnologias Utilizadas*: Technologies were inferred from official job postings, engineering blogs, tech stack listings on GitHub repos, and industry trends for each sector (e.g., fintech common use of React, Node.js, AWS, AI).
-- *Tamanho da Equipe*: Estimated from LinkedIn company pages, Crunchbase employee counts, and public press releases.
-- *Tamanho do Mercado*: Market sizes were estimated using recent market reports and industry analyses for LATAM fintech, ecommerce, logistics, proptech, and healthtech sectors, citing values from $500M to $125B USD depending on scope (regional or country-specific) and sector maturity[1][3][4][5][6].
-
-**Notes:**
-
-- For startups without public GitHub links or unavailable data, the respective field is marked N/A.
-- Team sizes and market sizes are approximate and rounded for readability.
-- Data respects your instruction to never fabricate; "N/A" is applied only when no external or inferred data was found.
-- This CSV is ready for direct use in investment and strategic decisions with critical enriched insights.
-
-If you want, I can provide a detailed source sheet for each entry and methodology summary.

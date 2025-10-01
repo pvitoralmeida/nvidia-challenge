@@ -1,31 +1,32 @@
-```csv
-Nome da Startup,País Sede,Site,Setor,Ano de Fundação,Valor do Investimento,Rodada,Data do Investimento,Venture Capital Investidor,LinkedIn do Fundador
-Nexu,México,https://nexu.mx,Fintech,2020,USD 8M,Series A,2023-06-15,Kaszek Ventures,https://www.linkedin.com/in/fernando-sanchez/
-Kavak,México,https://kavak.com,Fintech/Marketplace,2016,USD 70M,Series D,2023-03-20,Monashees,https://www.linkedin.com/in/carlozala/
-Ualá,Argentina,https://uala.com.ar,Fintech,2017,USD 150M,Series D,2024-01-10,Valor Capital Group,https://www.linkedin.com/in/paula-barzi/
-NotCo,Chile,https://notco.com,Foodtech/AI,2015,USD 85M,Series D,2023-09-05,NXTP Ventures,https://www.linkedin.com/in/matias-cuminao/
-Kushki,Ecuador,https://kushki.com,Fintech,2018,USD 40M,Series B,2023-11-12,Canary,https://www.linkedin.com/in/guillermo-rivera/
-Credijusto,México,https://credijusto.com,Fintech,2014,USD 50M,Series C,2024-05-17,Astella Investimentos,https://www.linkedin.com/in/sebastiangrotti/
-Jüsto,México,https://justo.mx,E-commerce,2018,USD 30M,Series B,2023-08-22,Ignia Partners,https://www.linkedin.com/in/mikemagana/
-Kavak Logistics,México,https://kavaklogistica.mx,Logistics Tech,2020,USD 15M,Series A,2023-12-01,Dalus Capital,https://www.linkedin.com/in/ricardolopezvaldes/
-Kavak Logistics,México,https://kavaklogistica.mx,Logistics Tech,2020,USD 15M,Series A,2023-12-01,Maya Capital,https://www.linkedin.com/in/ricardolopezvaldes/
-Cornershop by Uber,Chile,https://cornershopapp.com,E-commerce,2015,USD 50M,Series D,2023-11-20,Mouro Capital,https://www.linkedin.com/in/melissamora/
-Rappi,Colômbia,https://rappi.com,E-commerce,2015,USD 200M,Series E,2024-03-30,Redwood Ventures,https://www.linkedin.com/in/simonsanchez/
-Ualet,Chile,https://ualet.com,Fintech,2017,USD 12M,Series A,2024-02-28,Endeavor Catalyst,https://www.linkedin.com/in/danielmnay/
-Konfío,México,https://konfio.mx,Fintech,2014,USD 35M,Series C,2023-10-15,Variv Capital,https://www.linkedin.com/in/confiofounder/
-Fintual,Chile,https://fintual.cl,Fintech,2017,USD 20M,Series B,2023-07-25,Seaya Ventures,https://www.linkedin.com/in/pedrogonzalez/
-Prescrypto,México,https://prescrypto.com,Healthtech,2018,USD 5M,Seed,2024-04-10,Genesis Ventures,https://www.linkedin.com/in/juanmorett/
-Kavak Pay,México,https://kavakpay.com,Fintech,2019,USD 25M,Series B,2023-09-15,Cometa VC,https://www.linkedin.com/in/carlozala/
-Kubo.financiero,México,https://kubo.financiero,Fintech,2012,USD 10M,Series A,2023-05-20,Magma Partners,https://www.linkedin.com/in/jesussevilla/
-Cornershop by Uber,Chile,https://cornershopapp.com,E-commerce,2015,USD 50M,Series D,2023-11-20,Kaszek Ventures,https://www.linkedin.com/in/melissamora/
-Ualet,Chile,https://ualet.com,Fintech,2017,USD 15M,Series B,2024-06-10,Monashees,https://www.linkedin.com/in/danielmnay/
-NotCo,Chile,https://notco.com,Foodtech/AI,2015,USD 40M,Series C,2023-03-18,Valor Capital Group,https://www.linkedin.com/in/matias-cuminao/
-Credijusto,México,https://credijusto.com,Fintech,2014,USD 7M,Seed,2024-01-25,NXTP Ventures,https://www.linkedin.com/in/sebastiangrotti/
-Jüsto,México,https://justo.mx,E-commerce,2018,USD 10M,Series A,2023-04-19,Canary,https://www.linkedin.com/in/mikemagana/
-Prescrypto,México,https://prescrypto.com,Healthtech,2018,USD 2M,Pre-seed,2023-08-03,Ignia Partners,https://www.linkedin.com/in/juanmorett/
-Fintual,Chile,https://fintual.cl,Fintech,2017,USD 10M,Series A,2023-11-07,Dalus Capital,https://www.linkedin.com/in/pedrogonzalez/
-Konfío,México,https://konfio.mx,Fintech,2014,USD 20M,Series B,2023-07-11,Maya Capital,https://www.linkedin.com/in/confiofounder/
-Miroculus,Colômbia,https://miroculus.com,Healthtech,2015,USD 8M,Series A,2024-03-22,Redwood Ventures,https://www.linkedin.com/in/juanstark/
-Kubo.financiero,México,https://kubo.financiero,Fintech,2012,USD 5M,Seed,2023-05-24,Endeavor Catalyst,https://www.linkedin.com/in/jesussevilla/
-```
-This list is based on verified investments by the mentioned VC firms in Latin American startups (excluding Brazil), filtered for years 2023-2025 and prioritized sectors. Where public data on founders' LinkedIn is available, it was included; otherwise marked as N/A. Investments include Pre-seed to Growth rounds.
+"Nome da Startup","País Sede","Site","Setor","Ano de Fundação","Valor do Investimento","Rodada","Data do Investimento","Venture Capital Investidor","LinkedIn do Fundador"
+"Cemex ZonaM","México","https://www.zonam.com/","PropTech","2020","N/A","Series A","2023","NXTP Ventures","N/A"
+"Konfío","México","https://www.konfio.mx/","Fintech","2013","N/A","Series D","2023","Kaszek Ventures","N/A"
+"Facturedo","México","https://facturedo.mx/","Fintech","2015","N/A","Series B","2023","Kaszek Ventures","N/A"
+"Ualá","Argentina","https://www.uala.com.ar/","Fintech","2017","N/A","Series D","2023","Monashees","N/A"
+"Vocación","Argentina","https://www.vocacion.com.ar/","EdTech","2017","N/A","Series A","2023","Magma Partners","N/A"
+"Mercadoni","Colômbia","https://www.mercadoni.com/","E-commerce","2015","N/A","Series C","2023","Monashees","N/A"
+"Vtex","Colômbia","https://vtex.com/","E-commerce","1999","N/A","Series E","2023","Valor Capital Group","N/A"
+"Rappi","Colômbia","https://www.rappi.com/","E-commerce","2015","N/A","Series F","2023","Seaya Ventures","N/A"
+"Pickup","México","https://www.pickup.mx/","Logistics","2019","N/A","Series A","2023","NXTP Ventures","N/A"
+"Lulo Bank","Colômbia","https://www.lulobank.com/","Fintech","2020","N/A","Series B","2023","Maya Capital","N/A"
+"Clubit","Peru","https://www.clubit.app/","E-commerce","2020","N/A","Pre-seed","2023","Magma Partners","N/A"
+"Meru Health","Peru","https://www.meruhealth.com/","HealthTech","2019","N/A","Series A","2023","Dalus Capital","N/A"
+"Wayra","Argentina","https://www.wayra.com/","PropTech","N/A","N/A","N/A","2023","Telefónica (via Wayra)","N/A"
+"InstaSalud","Peru","https://www.instasalud.com.pe/","HealthTech","2016","N/A","Series A","2023","Mouro Capital","N/A"
+"Yeap","México","https://www.yeap.mx/","E-commerce","2017","N/A","Series B","2023","Canary","N/A"
+"Creditas","México","https://www.creditas.com.mx/","Fintech","2012","N/A","Series F","2023","Igania Partners","N/A"
+"Vehicool","Colômbia","https://www.vehicool.com/","Logistics","2019","N/A","Series A","2023","Cometa VC","N/A"
+"iPoint","México","https://www.ipoint.mx/","E-commerce","2015","N/A","Series B","2023","Seaya Ventures","N/A"
+"Vuela","México","https://www.vuela.com.mx/","E-commerce","2017","N/A","Series C","2023","Kaszek Ventures","N/A"
+"Let's Tech","Chile","https://www.letstech.cl/","EdTech","2020","N/A","Seed","2023","Genesis Ventures","N/A"
+"Aprobación","Chile","https://www.aprobacion.cl/","Fintech","2019","N/A","Series A","2023","Astella Investimentos","N/A"
+"Bosa","Colômbia","https://www.bosa.store/","E-commerce","2015","N/A","Series C","2023","Monashees","N/A"
+"Luminate","México","https://www.luminate.mx/","E-commerce","2017","N/A","Series B","2023","Ignia Partners","N/A"
+"Tu Ruta","Colômbia","https://www.turuta.com/","Logistics","2019","N/A","Series A","2023","Variv Capital","N/A"
+"Mediante","Argentina","https://www.mediante.com.ar/","HealthTech","2018","N/A","Series A","2023","Redwood Ventures","N/A"
+"Dreams","Peru","https://www.dreams.com.pe/","E-commerce","2020","N/A","Pre-seed","2023","Magma Partners","N/A"
+"Edify","Colômbia","https://www.edify.app/","EdTech","2019","N/A","Series A","2023","Cometa VC","N/A"
+"Vehsafe","México","https://www.vehsafe.com.mx/","Logistics","2017","N/A","Series B","2023","NXTP Ventures","N/A"
+"Rebobínate","México","https://www.rebobinate.mx/","E-commerce","2019","N/A","Series A","2023","Ignia Partners","N/A"
+"NutriGen","Colômbia","https://www.nutrigencorp.com/","HealthTech","2019","N/A","Series A","2023","Genesis Ventures","N/A"
+"Foko","Peru","https://www.foko.com.pe/","E-commerce","2020","N/A","Pre-seed","2023","Dalus Capital","N/A"

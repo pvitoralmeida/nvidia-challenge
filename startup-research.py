@@ -1,10 +1,9 @@
-
 import os
 import pandas as pd
 from crewai import Agent, Task, Crew, Process, LLM
 from crewai_tools import ScrapeWebsiteTool
 
-# --- 1. Configuração Inicial --- #
+# --- 1. Configuração Inicial ---
 
 # Carrega a chave da API do ambiente
 PERPLEXITY_API_KEY = os.environ.get("PERPLEXITY_API_KEY")
@@ -22,7 +21,26 @@ perplexity_llm = LLM(
 # Instancia a ferramenta de scraping
 scrape_tool = ScrapeWebsiteTool()
 
-# --- 2. Definição de Agentes --- #
+# --- MASTER LISTA DE COLUNAS --- #
+# Definir uma lista mestra de todas as colunas esperadas para o CSV final, na ordem desejada.
+MASTER_COLUMNS = [
+    "Nome da Startup",
+    "País Sede",
+    "Site",
+    "Setor",
+    "Ano de Fundação",
+    "Valor do Investimento",
+    "Rodada (Seed, Series A, B, etc.)",
+    "Data do Investimento",
+    "Venture Capital Investidor",
+    "LinkedIn do Fundador",
+    "Link do Github",
+    "Tecnologias Utilizadas",
+    "Tamanho da Equipe",
+    "Tamanho do Mercado"
+]
+
+# --- 2. Definição de Agentes ---
 
 vc_research_agent = Agent(
     role="Especialista em Venture Capital e Inteligência de Mercado",
@@ -40,7 +58,8 @@ vc_research_agent = Agent(
         Sua missão é identificar startups de tecnologia investidas por VCs listadas,
         trazendo dados confiáveis, claros e estruturados em formato CSV.
         Você nunca inventa informações: apenas utiliza dados concretos que conhece
-        ou pode verificar. Suas análises são objetivas e segue estritamente o output esperado."""
+        ou pode verificar. Suas análises são objetivas e segue estritamente o output esperado.
+        Você é rigoroso em seguir a ordem e o nome das colunas definidas na tarefa."""
     ),
     llm=perplexity_llm,
     verbose=True
@@ -62,6 +81,7 @@ portfolio_analyser_agent = Agent(
         
         Sua missão é complementar e validar as informações coletadas pelo primeiro agente, 
         garantindo precisão, consistência e clareza através de scraping real das páginas web.
+        Você é rigoroso em seguir a ordem e o nome das colunas definidas na tarefa.
         
         INSTRUÇÕES ESPECÍFICAS PARA USO DE FERRAMENTAS:
         1. Use ScrapeWebsiteTool para acessar cada URL de portfólio fornecida
@@ -92,6 +112,7 @@ startup_analyser_agent = Agent(
     backstory=("""
         Você é um especialista rigoroso em validação de dados. Sua função é verificar se o dataset final contém startups únicas e válidas, 
         removendo duplicatas e entradas inválidas.
+        Você é rigoroso em seguir a ordem e o nome das colunas definidas na tarefa.
         
         METODOLOGIA (6 ETAPAS):
         1. Validação inicial dados básicos
@@ -104,7 +125,7 @@ startup_analyser_agent = Agent(
         FONTES PRIORITÁRIAS: Website oficial, LinkedIn fundadores, Crunchbase/AngelList/Github,
         press releases, relatórios setoriais, plataformas review
         
-        DADOS SEMPRE ENRIQUECIDOS: github, TAM/SAM, tech stack, tamanho equipe.
+        DADOS SEMPRE ENRIQUECIDOS: github, tamanho do mercado, tecnologias, tamanho equipe.
         
         PRINCÍPIO FUNDAMENTAL: NUNCA inventa informações. Dados não encontrados = "N/A".
         Trabalha sistematicamente, documenta fontes, mantém alto padrão qualidade.
@@ -122,6 +143,7 @@ revisor_agent = Agent(
     backstory=("""
         Você é um especialista rigoroso em validação de dados e controle de qualidade.
         Sua única função é verificar se o dataset final está adequado.
+        Você é rigoroso em seguir a ordem e o nome das colunas definidas na tarefa.
         
         REGRAS OBRIGATÓRIAS:
         1. Contar o número total de startups no dataset
@@ -137,28 +159,29 @@ revisor_agent = Agent(
 
 format_guardian_agent = Agent(
     role="Especialista em Padronização de Saída",
-    goal="Garantir que as respostas estejam estritamente no formato CSV solicitado",
+    goal="Garantir que as respostas estejam estritamente no formato CSV solicitado, com as colunas corretas e na ordem definida.",
     backstory=("""
         Você é um especialista em validação de dados e padronização de saídas.
         Seu foco é revisar, ajustar e garantir que qualquer resultado gerado esteja
         exatamente no formato solicitado: uma tabela CSV PURA, sem comentários extras,
-        sem blocos markdown e apenas com as colunas exigidas.
+        sem blocos markdown e apenas com as colunas exigidas na ordem exata da lista mestra.
+        Você deve reordenar e filtrar colunas para corresponder à lista mestra.
         
         Você combina dados de múltiplas fontes, elimina duplicatas, padroniza formatos
-        e garante consistência em todas as informações.
-        """),
+        e garante consistência em todas as informações."""
+    ),
     llm=perplexity_llm,
     verbose=True
 )
 
-# --- 3. Definição de Tarefas --- #
+# --- 3. Definição de Tarefas ---
 
 vc_research_task = Task(
     description=("""
         Pesquise startups latinas (menos do Brasil) de tecnologia que receberam investimentos em 2023-2025
         pelas seguintes firmas de Venture Capital: {vc_list}.
         
-        Para cada VC listada, identifique PELO MENOS 1-2 startups que receberam
+        Para cada VC listada, identifique PELO MENOS 1-2 startups da AMÉRICA LATINA (excluindo o Brasil) que receberam
         investimentos nesse período. Use seu conhecimento do ecossistema de startups
         latino-americano para identificar:
         
@@ -170,20 +193,12 @@ vc_research_task = Task(
         quando disponíveis. Se não tiver informação específica sobre um campo,
         indique como "N/A"."""
     ),
-    expected_output="""
+    expected_output=f"""
     Forneça em formato CSV APENAS a tabela, SEM conclusões, introduções ou texto extra.
     NÃO INVENTE exemplos fictícios - use apenas informações que você conhece.
-    As colunas DEVEM SER exatamente as seguintes (nessa ordem):
-    - Nome da Startup
-    - País Sede
-    - Site
-    - Setor
-    - Ano de Fundação
-    - Valor do Investimento
-    - Rodada (Seed, Series A, B, etc.)
-    - Data do Investimento
-    - Venture Capital Investidor
-    - LinkedIn do Fundador""",
+    As colunas DEVEM SER exatamente as seguintes, nesta ordem: {', '.join(MASTER_COLUMNS[:10])}.
+    Preencha com 'N/A' as colunas que não são aplicáveis a esta etapa ou para as quais não há dados.
+    """,
     agent=vc_research_agent,
     output_file="startups_pesquisa_inicial.csv"
 )
@@ -213,7 +228,11 @@ portfolio_analyser_task = Task(
         - Use a ferramenta de scraping para cada URL individual
         - Não invente informações - apenas use dados extraídos
         """),
-    expected_output="Formato CSV com as mesmas colunas da tarefa anterior, complementado com os dados do scraping.",
+    expected_output=f"""
+    Forneça em formato CSV APENAS a tabela, SEM conclusões, introduções ou texto extra.
+    As colunas DEVEM SER exatamente as seguintes, nesta ordem: {', '.join(MASTER_COLUMNS[:10])}.
+    Preencha com 'N/A' as colunas que não são aplicáveis a esta etapa ou para as quais não há dados.
+    """,
     agent=portfolio_analyser_agent,
     context=[vc_research_task],
     output_file="startups_enriquecidos_portfolio.csv"
@@ -221,7 +240,11 @@ portfolio_analyser_task = Task(
 
 startup_analysis_task = Task(
     description="Enriqueça os dados de cada startup com informações detalhadas sobre produto, tecnologias, equipe, etc.",
-    expected_output="CSV enriquecido com colunas adicionais: Link do Github, Tecnologias Utilizadas, Tamanho da Equipe, Tamanho do Mercado.",
+    expected_output=f"""
+    Forneça em formato CSV APENAS a tabela, SEM conclusões, introduções ou texto extra.
+    As colunas DEVEM SER exatamente as seguintes, nesta ordem: {', '.join(MASTER_COLUMNS)}.
+    Preencha com 'N/A' as colunas para as quais não há dados.
+    """,
     agent=startup_analyser_agent,
     context=[portfolio_analyser_task], 
     output_file="startups_enriquecidos_startup.csv"
@@ -229,21 +252,29 @@ startup_analysis_task = Task(
 
 review_task = Task(
     description="Valide o dataset coletado, garantindo que todas as startups sejam únicas e válidas, removendo duplicatas e entradas inválidas e garantindo que todas as colunas estejam com valores coerentes.",
-    expected_output="Um arquivo CSV contendo todas as startups validadas, sem duplicatas e sem entradas inválidas.",
+    expected_output=f"""
+    Forneça em formato CSV APENAS a tabela, SEM conclusões, introduções ou texto extra.
+    As colunas DEVEM SER exatamente as seguintes, nesta ordem: {', '.join(MASTER_COLUMNS)}.
+    Garanta que não há duplicatas e que todas as entradas são válidas. Preencha com 'N/A' as colunas para as quais não há dados.
+    """,
     agent=revisor_agent,
     context=[startup_analysis_task],
     output_file="startups_revisado.csv"
 )
 
 final_csv_task = Task(
-    description="Formate a saída final em um único arquivo CSV, garantindo que todos os dados estejam consistentes e bem estruturados.",
-    expected_output="Um único arquivo CSV chamado 'startups_final.csv' contendo todas as startups validadas e formatadas.",
+    description="Formate a saída final em um único arquivo CSV, garantindo que todos os dados estejam consistentes e bem estruturados, com as colunas corretas e na ordem definida.",
+    expected_output=f"""
+    Um único arquivo CSV chamado 'startups_final.csv' contendo todas as startups validadas e formatadas.
+    As colunas DEVEM SER exatamente as seguintes, nesta ordem: {', '.join(MASTER_COLUMNS)}.
+    Remova quaisquer colunas que não estejam nesta lista e reordene as existentes conforme necessário.
+    """,
     agent=format_guardian_agent,
     context=[review_task],
     output_file="startups_final.csv"
 )
 
-# --- 4. Funções de Execução e Mesclagem --- #
+# --- 4. Funções de Execução e Mesclagem ---
 
 def load_and_merge_data(new_data_path, final_data_path):
     """
@@ -288,13 +319,17 @@ def run_crew_challenge(vc_list, portfolio_list):
         verbose=True
     )
 
-    result = crew.kickoff(inputs={'vc_list': vc_list, 'portfolio_list': portfolio_list})
+    result = crew.kickoff(inputs={
+        'vc_list': ", ".join(vc_list),
+        'portfolio_list': ", ".join(portfolio_list)
+    })
     
+    # Passa a lista mestra de colunas para a função de mesclagem
     load_and_merge_data("startups_final.csv", "startups_consolidado.csv")
     
     return result
 
-# --- 5. Listas de VCs e Portfólios --- #
+# --- 5. Listas de VCs e Portfólios ---
 
 vc_list = [
     "Kaszek Ventures", "Monashees", "Valor Capital Group", "NXTP Ventures", "Canary", "Astella Investimentos", "Ignia Partners",
@@ -322,7 +357,7 @@ portfolio_list = [
     "https://magmapartners.com/companies"
 ]
 
-# --- 6. Execução Principal --- #
+# --- 6. Execução Principal ---
 
 if __name__ == "__main__":
     print("🎯 NVIDIA Challenge - Pipeline de Coleta e Enriquecimento de Startups")
@@ -344,3 +379,4 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"\n❌ ERRO durante a execução: {e}")
         print("🔧 Verifique se todas as dependências estão instaladas e as chaves de API são válidas.")
+
