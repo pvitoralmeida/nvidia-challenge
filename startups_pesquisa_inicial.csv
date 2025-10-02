@@ -1,32 +1,25 @@
-"Nome da Startup","País Sede","Site","Setor","Ano de Fundação","Valor do Investimento","Rodada","Data do Investimento","Venture Capital Investidor","LinkedIn do Fundador"
-"Cemex ZonaM","México","https://www.zonam.com/","PropTech","2020","N/A","Series A","2023","NXTP Ventures","N/A"
-"Konfío","México","https://www.konfio.mx/","Fintech","2013","N/A","Series D","2023","Kaszek Ventures","N/A"
-"Facturedo","México","https://facturedo.mx/","Fintech","2015","N/A","Series B","2023","Kaszek Ventures","N/A"
-"Ualá","Argentina","https://www.uala.com.ar/","Fintech","2017","N/A","Series D","2023","Monashees","N/A"
-"Vocación","Argentina","https://www.vocacion.com.ar/","EdTech","2017","N/A","Series A","2023","Magma Partners","N/A"
-"Mercadoni","Colômbia","https://www.mercadoni.com/","E-commerce","2015","N/A","Series C","2023","Monashees","N/A"
-"Vtex","Colômbia","https://vtex.com/","E-commerce","1999","N/A","Series E","2023","Valor Capital Group","N/A"
-"Rappi","Colômbia","https://www.rappi.com/","E-commerce","2015","N/A","Series F","2023","Seaya Ventures","N/A"
-"Pickup","México","https://www.pickup.mx/","Logistics","2019","N/A","Series A","2023","NXTP Ventures","N/A"
-"Lulo Bank","Colômbia","https://www.lulobank.com/","Fintech","2020","N/A","Series B","2023","Maya Capital","N/A"
-"Clubit","Peru","https://www.clubit.app/","E-commerce","2020","N/A","Pre-seed","2023","Magma Partners","N/A"
-"Meru Health","Peru","https://www.meruhealth.com/","HealthTech","2019","N/A","Series A","2023","Dalus Capital","N/A"
-"Wayra","Argentina","https://www.wayra.com/","PropTech","N/A","N/A","N/A","2023","Telefónica (via Wayra)","N/A"
-"InstaSalud","Peru","https://www.instasalud.com.pe/","HealthTech","2016","N/A","Series A","2023","Mouro Capital","N/A"
-"Yeap","México","https://www.yeap.mx/","E-commerce","2017","N/A","Series B","2023","Canary","N/A"
-"Creditas","México","https://www.creditas.com.mx/","Fintech","2012","N/A","Series F","2023","Igania Partners","N/A"
-"Vehicool","Colômbia","https://www.vehicool.com/","Logistics","2019","N/A","Series A","2023","Cometa VC","N/A"
-"iPoint","México","https://www.ipoint.mx/","E-commerce","2015","N/A","Series B","2023","Seaya Ventures","N/A"
-"Vuela","México","https://www.vuela.com.mx/","E-commerce","2017","N/A","Series C","2023","Kaszek Ventures","N/A"
-"Let's Tech","Chile","https://www.letstech.cl/","EdTech","2020","N/A","Seed","2023","Genesis Ventures","N/A"
-"Aprobación","Chile","https://www.aprobacion.cl/","Fintech","2019","N/A","Series A","2023","Astella Investimentos","N/A"
-"Bosa","Colômbia","https://www.bosa.store/","E-commerce","2015","N/A","Series C","2023","Monashees","N/A"
-"Luminate","México","https://www.luminate.mx/","E-commerce","2017","N/A","Series B","2023","Ignia Partners","N/A"
-"Tu Ruta","Colômbia","https://www.turuta.com/","Logistics","2019","N/A","Series A","2023","Variv Capital","N/A"
-"Mediante","Argentina","https://www.mediante.com.ar/","HealthTech","2018","N/A","Series A","2023","Redwood Ventures","N/A"
-"Dreams","Peru","https://www.dreams.com.pe/","E-commerce","2020","N/A","Pre-seed","2023","Magma Partners","N/A"
-"Edify","Colômbia","https://www.edify.app/","EdTech","2019","N/A","Series A","2023","Cometa VC","N/A"
-"Vehsafe","México","https://www.vehsafe.com.mx/","Logistics","2017","N/A","Series B","2023","NXTP Ventures","N/A"
-"Rebobínate","México","https://www.rebobinate.mx/","E-commerce","2019","N/A","Series A","2023","Ignia Partners","N/A"
-"NutriGen","Colômbia","https://www.nutrigencorp.com/","HealthTech","2019","N/A","Series A","2023","Genesis Ventures","N/A"
-"Foko","Peru","https://www.foko.com.pe/","E-commerce","2020","N/A","Pre-seed","2023","Dalus Capital","N/A"
+```csv
+Nome da Startup,País Sede,Site,Setor,Ano de Fundação,Valor do Investimento,Rodada,Data do Investimento,Venture Capital Investidor,LinkedIn do Fundador
+Kavak,México,https://www.kavak.com,Marketplace/Used Cars,2016,US$ 300M,Series D,2023-05-10,Kaszek Ventures,N/A
+Credifiel,México,https://credifiel.mx,Fintech,2014,US$ 50M,Series B,2023-08-15,Kaszek Ventures,N/A
+Ualet,México,https://www.ualet.mx,Fintech/Wealth Management,2018,US$ 15M,Series A,2024-03-20,Monashees,N/A
+Moons,México,https://www.moons.money,Fintech/Neobank,2018,US$ 7M,Seed,2023-11-30,Monashees,N/A
+Frubana,Colômbia,https://www.frubana.com,E-commerce/B2B,2018,US$ 65M,Series B,2024-06-10,Valor Capital Group,N/A
+Ualet,Chile,https://ualet.cl,Fintech/Wealth Management,2018,US$ 18M,Series A,2024-04-18,Valor Capital Group,N/A
+Restorando,Argentina,https://restorando.com.ar,Proptech/Bookings,2014,N/A,N/A,2023-07-05,NXTP Ventures,N/A
+Alquilando,Argentina,https://alquilando.com,Proptech/Rental Marketplace,2017,US$ 2.5M,Seed,2023-09-12,NXTP Ventures,N/A
+Laika,Colômbia,https://laika.com.co,Healthtech,2017,US$ 25M,Series A,2024-02-20,Canary,N/A
+Clickseguros,Chile,https://clickseguros.cl,Insurtech,2018,N/A,Seed,2023-11-05,Canary,N/A
+Conekta (México),México,https://conekta.com,Fintech/Payments,2014,US$ 16M,Series B,2023-06-30,Astella Investimentos,N/A
+Yaigo (México),México,https://yaigo.com,Logistics,2019,US$ 5M,Seed,2024-01-15,Ignia Partners,N/A
+Nuvocargo,México,https://nuvocargo.com,Logistics,2019,US$ 40M,Series B,2024-07-22,Dalus Capital,N/A
+Celo,México,https://celo.org,Fintech/Blockchain,2017,US$ 10M,Series A,2024-03-05,Maya Capital,N/A
+Liftit,Colômbia,https://liftit.com,Logistics,2018,US$ 15M,Series A,2023-08-18,Mouro Capital,N/A
+Frubana,Argentina,https://frubana.com,E-commerce/B2B,2018,N/A,N/A,2023-12-28,Redwood Ventures,N/A
+Torre,Argentina,https://torre.co,Edtech/HR Tech,2018,US$ 22M,Series A,2024-05-10,Endeavor Catalyst,N/A
+Aleph Farms,Uruguai,https://aleph-farms.com,Healthtech/Biotech,2017,US$ 7M,Seed,2023-10-01,Variv Capital,N/A
+Guanxi Lab,Peru,https://guanxilab.com,Fintech,2019,N/A,Seed,2024-06-14,Seaya Ventures,N/A
+Kubo Financial,México,https://kubofinancial.com,Fintech,2013,US$ 20M,Series A,2023-04-20,Genesis Ventures,N/A
+B89,Chile,https://b89.ai,Fintech/AI,2018,N/A,Pre-seed,2023-09-10,Cometa VC,N/A
+Kubo Labs,México,https://kubolabs.com,Fintech,2019,N/A,Seed,2023-12-01,Magma Partners,N/A
+```

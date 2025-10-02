@@ -369,14 +369,14 @@ if __name__ == "__main__":
         resultado_final = run_crew_challenge(vc_list, portfolio_list)
         
         print("\n" + "=" * 60)
-        print("🎉 EXECUÇÃO CONCLUÍDA COM SUCESSO!")
+        print("EXECUÇÃO CONCLUÍDA COM SUCESSO!")
         print("=" * 60)
-        print(f"📄 Resultado final do Crew: {resultado_final}")
-        print("\n📁 Arquivos gerados:")
+        print(f"Resultado final do Crew: {resultado_final}")
+        print("Arquivos gerados:")
         print("   - startups_final.csv (startups coletadas nesta execução)")
         print("   - startups_consolidado.csv (base de dados acumulada e deduplicada)")
         
     except Exception as e:
-        print(f"\n❌ ERRO durante a execução: {e}")
-        print("🔧 Verifique se todas as dependências estão instaladas e as chaves de API são válidas.")
+        print(f"\nERRO durante a execução: {e}")
+        print("Verifique se todas as dependências estão instaladas e as chaves de API são válidas.")
 

@@ -1,43 +1,54 @@
-"Nome da Startup","País Sede","Site","Setor","Ano de Fundação","Valor do Investimento","Rodada","Data do Investimento","Venture Capital Investidor","LinkedIn do Fundador"
-"Nubank","Brazil","https://nubank.com.br/","Fintech","N/A","N/A","N/A","N/A","Kaszek Ventures","N/A"
-"Creditas","Mexico","https://creditas.com/","Fintech","N/A","N/A","N/A","N/A","Kaszek Ventures;Ignia Partners","N/A"
-"Loggi","Brazil","https://loggi.com/","Logistics","N/A","N/A","N/A","N/A","Kaszek Ventures;Monashees;Valor Capital Group","N/A"
-"QuintoAndar","Brazil","https://quintoandar.com.br/","PropTech","N/A","N/A","N/A","N/A","Kaszek Ventures;Monashees;Valor Capital Group;Mouro Capital","N/A"
-"Gympass","Brazil","https://gympass.com/","Health & Wellness","N/A","N/A","N/A","N/A","Kaszek Ventures;Monashees;Valor Capital Group;Mouro Capital","N/A"
-"MadeiraMadeira","Brazil","https://madeiramadeira.com.br/","E-commerce","N/A","N/A","N/A","N/A","Kaszek Ventures;Monashees;Canary","N/A"
-"Wildlife Studios","Brazil","https://wildlifestudios.com/","Gaming","N/A","N/A","N/A","N/A","Kaszek Ventures","N/A"
-"Ebanx","Brazil","https://ebanx.com/","Fintech","N/A","N/A","N/A","N/A","Kaszek Ventures","N/A"
-"Ualá","Argentina","https://uala.com.ar/","Fintech","N/A","N/A","N/A","N/A","Monashees;NXTP Ventures;Mapeos Endeavor","N/A"
-"Technisys","Argentina","https://technisys.com/","Fintech","N/A","N/A","N/A","N/A","NXTP Ventures","N/A"
-"Satellogic","Argentina","https://satellogic.com/","SpaceTech","N/A","N/A","N/A","N/A","NXTP Ventures;Mapeos Endeavor","N/A"
-"Increase","Brazil","https://increase.com.br/","Fintech","N/A","N/A","N/A","N/A","NXTP Ventures","N/A"
-"Credit Market","Brazil","https://creditas.com/","Fintech","N/A","N/A","N/A","N/A","Canary","N/A"
-"PlayKids","Brazil","https://playkids.com/","EdTech","N/A","N/A","N/A","N/A","Canary","N/A"
-"Vérios","Brazil","https://verios.com.br/","Fintech","N/A","N/A","N/A","N/A","Canary","N/A"
-"Aegro","Brazil","https://aegro.com.br/","AgTech","N/A","N/A","N/A","N/A","Astella Investimentos","N/A"
-"Ep Health","Brazil","https://ephealth.com.br/","HealthTech","N/A","N/A","N/A","N/A","Astella Investimentos","N/A"
-"Conexa Saúde","Brazil","https://conexasaude.com.br/","HealthTech","N/A","N/A","N/A","N/A","Astella Investimentos","N/A"
-"Kueski","Mexico","https://kueski.com/","Fintech","N/A","N/A","N/A","N/A","Ignia Partners","N/A"
-"Clara","Mexico","https://clara.com/","Fintech","N/A","N/A","N/A","N/A","Ignia Partners","N/A"
-"Merama","Mexico","https://merama.io/","E-commerce","N/A","N/A","N/A","N/A","Dalus Capital","N/A"
-"Calyx","Mexico","https://calyx.mx/","HealthTech","N/A","N/A","N/A","N/A","Dalus Capital","N/A"
-"Meru Health","Mexico","https://meruhealth.com/","HealthTech","N/A","N/A","N/A","N/A","Dalus Capital;Mouro Capital","N/A"
-"Lulo Bank","Colombia","https://lulobank.com/","Fintech","N/A","N/A","N/A","N/A","Maya Capital","N/A"
-"Frubana","Colombia","https://frubana.com/","Supply Chain","N/A","N/A","N/A","N/A","Maya Capital","N/A"
-"Tuma","Mexico","https://tuma.com.mx/","Fintech","N/A","N/A","N/A","N/A","Maya Capital","N/A"
-"Movile","Brazil","https://movile.com/","Mobile Tech","N/A","N/A","N/A","N/A","Mouro Capital","N/A"
-"Clip","Mexico","https://clip.mx/","Fintech","N/A","N/A","N/A","N/A","Redwood Ventures","N/A"
-"Cornershop","Mexico","https://cornershopapp.com/","E-commerce","N/A","N/A","N/A","N/A","Redwood Ventures","N/A"
-"Mediante","Mexico","https://mediante.com/","HealthTech","N/A","N/A","N/A","N/A","Redwood Ventures","N/A"
-"Restorando","Argentina","https://restorando.com/","Hospitality Tech","N/A","N/A","N/A","N/A","Mapeos Endeavor","N/A"
-"Tu Ruta","Colombia","https://turuta.com/","Logistics","N/A","N/A","N/A","N/A","Variv Capital","N/A"
-"Rappi","Colombia","https://rappi.com/","E-commerce","N/A","N/A","N/A","N/A","Seaya Ventures","N/A"
-"Glovo","Spain","https://glovoapp.com/","Logistics","N/A","N/A","N/A","N/A","Seaya Ventures","N/A"
-"Cabify","Spain","https://cabify.com/","Mobility","N/A","N/A","N/A","N/A","Seaya Ventures","N/A"
-"Let's Tech","Chile","https://letstech.cl/","EdTech","N/A","N/A","N/A","N/A","Genesis Ventures","N/A"
-"NutriGen","Colombia","https://nutrigencorp.com/","HealthTech","N/A","N/A","N/A","N/A","Genesis Ventures","N/A"
-"Vehicool","Colombia","https://vehicool.com/","Logistics","N/A","N/A","N/A","N/A","Cometa VC","N/A"
-"Edify","Colombia","https://edify.app/","EdTech","N/A","N/A","N/A","N/A","Cometa VC","N/A"
-"Vocación","Argentina","https://vocacion.com.ar/","EdTech","N/A","N/A","N/A","N/A","Magma Partners","N/A"
-"Clubit","Peru","https://clubit.app/","E-commerce","N/A","N/A","N/A","N/A","Magma Partners","N/A"
-"Dreams","Peru","https://dreams.com.pe/","E-commerce","N/A","N/A","N/A","N/A","Magma Partners","N/A"
+Nome da Startup,País Sede,Site,Setor,Ano de Fundação,Valor do Investimento,Rodada,Data do Investimento,Venture Capital Investidor,LinkedIn do Fundador
+Kavak,México,https://www.kavak.com,Marketplace/Used Cars,2016,US$ 300M,Series D,2023-05-10,Kaszek Ventures,N/A
+Credifiel,México,https://credifiel.mx,Fintech,2014,US$ 50M,Series B,2023-08-15,Kaszek Ventures,N/A
+Mercado Libre,Argentina,https://www.mercadolibre.com,Marketplace/E-commerce,N/A,N/A,N/A,N/A,Kaszek Ventures,N/A
+Gympass,Brasil,https://www.gympass.com,Health & Fitness/Nwellness,N/A,N/A,N/A,N/A,Kaszek Ventures,N/A
+QuintoAndar,Brasil,https://www.quintoandar.com.br,Proptech,N/A,N/A,N/A,N/A,Kaszek Ventures,N/A
+Ualet,México,https://www.ualet.mx,Fintech/Wealth Management,2018,US$ 15M,Series A,2024-03-20,Monashees,N/A
+Moons,México,https://www.moons.money,Fintech/Neobank,2018,US$ 7M,Seed,2023-11-30,Monashees,N/A
+Wildlife Studios,Brasil,https://www.wildlifestudios.com,Entertainment/Gaming,N/A,N/A,N/A,N/A,Monashees,N/A
+Frubana,Colômbia,https://www.frubana.com,E-commerce/B2B,2018,US$ 65M,Series B,2024-06-10,Valor Capital Group,N/A
+Ualet,Chile,https://ualet.cl,Fintech/Wealth Management,2018,US$ 18M,Series A,2024-04-18,Valor Capital Group,N/A
+Kavak Educação,Brasil,https://kavakeducation.com,Education Technology,N/A,N/A,N/A,N/A,Valor Capital Group,N/A
+Restorando,Argentina,https://restorando.com.ar,Proptech/Bookings,2014,N/A,N/A,2023-07-05,NXTP Ventures,N/A
+Alquilando,Argentina,https://alquilando.com,Proptech/Rental Marketplace,2017,US$ 2.5M,Seed,2023-09-12,NXTP Ventures,N/A
+Laika,Colômbia,https://laika.com.co,Healthtech,2017,US$ 25M,Series A,2024-02-20,Canary,N/A
+Clickseguros,Chile,https://clickseguros.cl,Insurtech,2018,N/A,Seed,2023-11-05,Canary,N/A
+Conekta (México),México,https://conekta.com,Fintech/Payments,2014,US$ 16M,Series B,2023-06-30,Astella Investimentos,N/A
+Yaigo (México),México,https://yaigo.com,Logistics,2019,US$ 5M,Seed,2024-01-15,Ignia Partners,N/A
+Nuvocargo,México,https://nuvocargo.com,Logistics,2019,US$ 40M,Series B,2024-07-22,Dalus Capital,N/A
+Celo,México,https://celo.org,Fintech/Blockchain,2017,US$ 10M,Series A,2024-03-05,Maya Capital,N/A
+Liftit,Colômbia,https://liftit.com,Logistics,2018,US$ 15M,Series A,2023-08-18,Mouro Capital,N/A
+Frubana,Argentina,https://frubana.com,E-commerce/B2B,2018,N/A,N/A,2023-12-28,Redwood Ventures,N/A
+Torre,Argentina,https://torre.co,Edtech/HR Tech,2018,US$ 22M,Series A,2024-05-10,Endeavor Catalyst,N/A
+Aleph Farms,Uruguai,https://aleph-farms.com,Healthtech/Biotech,2017,US$ 7M,Seed,2023-10-01,Variv Capital,N/A
+Guanxi Lab,Peru,https://guanxilab.com,Fintech,2019,N/A,Seed,2024-06-14,Seaya Ventures,N/A
+Kubo Financial,México,https://kubofinancial.com,Fintech,2013,US$ 20M,Series A,2023-04-20,Genesis Ventures,N/A
+B89,Chile,https://b89.ai,Fintech/AI,2018,N/A,Pre-seed,2023-09-10,Cometa VC,N/A
+Kubo Labs,México,https://kubolabs.com,Fintech,2019,N/A,Seed,2023-12-01,Magma Partners,N/A
+Nuvemshop,Argentina,https://www.nuvemshop.com,Software/E-commerce,N/A,N/A,N/A,N/A,Kaszek Ventures,N/A
+Dr. Consulta,Brasil,https://www.drconsulta.com,Healthtech,N/A,N/A,N/A,N/A,Kaszek Ventures,N/A
+Repassa,Brasil,https://www.repassa.com.br,E-commerce/Marketplace,N/A,N/A,N/A,N/A,Kaszek Ventures,N/A
+Vtex,Brasil,https://vtex.com,Software/E-commerce Platform,N/A,N/A,N/A,N/A,Kaszek Ventures,N/A
+QuintoAndar,Brasil,https://quintoandar.com.br,Proptech/Necotiations,N/A,N/A,N/A,N/A,Kaszek Ventures,N/A
+NiniHealth,México,https://ninihealth.com,Healthtech,N/A,N/A,N/A,N/A,Monashees,N/A
+Pagar.me,Brasil,https://pagar.me,Fintech/Payment,N/A,N/A,N/A,N/A,Monashees,N/A
+Cargamos,Colômbia,https://cargamos.com,Logistics,N/A,N/A,N/A,N/A,Valor Capital Group,N/A
+Kueski,México,https://kueski.com,Fintech/Necotiations,N/A,N/A,N/A,N/A,Valor Capital Group,N/A
+Pipefy,Brasil,https://pipefy.com,Software/Productivity,N/A,N/A,N/A,N/A,Valor Capital Group,N/A
+Miro,Brasil,https://miro.com,Software/Collaboration,N/A,N/A,N/A,N/A,Valor Capital Group,N/A
+Arco Educação,Brasil,https://arcoeducacao.com.br,Edtech,N/A,N/A,N/A,N/A,Valor Capital Group,N/A
+Increase,México,https://increase.com.br,Fintech,N/A,N/A,N/A,N/A,Valor Capital Group,N/A
+Truora,Colômbia,https://truora.com,Security/Software,N/A,N/A,N/A,N/A,NXTP Ventures,N/A
+Sists,Brasil,https://sists.com,Software,N/A,N/A,N/A,N/A,NXTP Ventures,N/A
+Workana,Argentina,https://workana.com,Marketplace/Freelance,N/A,N/A,N/A,N/A,NXTP Ventures,N/A
+Vix,Chile,https://vix.com,Media/Necotiations,N/A,N/A,N/A,N/A,Canary,N/A
+Creditas,Brasil,https://creditas.com,Fintech,N/A,N/A,N/A,N/A,Astella Investimentos,N/A
+QuintoAndar,Brasil,https://quintoandar.com.br,Proptech/Necotiations,N/A,N/A,N/A,N/A,Ignia Partners,N/A
+GuiaBolso,Brasil,https://guiabolso.com,Fintech/Necotiations,N/A,N/A,N/A,N/A,Maya Capital,N/A
+CargoX,Brasil,https://cargox.com,Logistics/Necotiations,N/A,N/A,N/A,N/A,Mouro Capital,N/A
+Loggi,Brasil,https://loggi.com,Logistics/Necotiations,N/A,N/A,N/A,N/A,Redwood Ventures,N/A
+Descomplica,Brasil,https://descomplica.com.br,Edtech/Necotiations,N/A,N/A,N/A,N/A,Seaya Ventures,N/A
+Publy,Brasil,https://publy.com,Media/Necotiations,N/A,N/A,N/A,N/A,Genesis Ventures,N/A
+Cowboy,Brasil,https://cowboy.com,Transportation/Necotiations,N/A,N/A,N/A,N/A,Cometa VC,N/A
+Wildlife Studios,Brasil,https://wildlifestudios.com,Entertainment/Gaming,N/A,N/A,N/A,N/A,Magma Partners,N/A
