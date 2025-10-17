@@ -21,6 +21,12 @@ perplexity_llm = LLM(
 # Instancia a ferramenta de scraping
 scrape_tool = ScrapeWebsiteTool()
 
+# Diretório para armazenar arquivos gerados
+OUTPUT_DIR = "outputs"
+
+# Garante que o diretório de saída exista
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
 # --- MASTER LISTA DE COLUNAS --- #
 # Definir uma lista mestra de todas as colunas esperadas para o CSV final, na ordem desejada.
 MASTER_COLUMNS = [
@@ -38,6 +44,34 @@ MASTER_COLUMNS = [
     "Tecnologias Utilizadas",
     "Tamanho da Equipe",
     "Tamanho do Mercado"
+]
+
+# --- Listas de VCs e Portfólios --- #
+
+vc_list = [
+    "Kaszek Ventures", "Monashees", "Valor Capital Group", "NXTP Ventures", "Canary", "Astella Investimentos", "Ignia Partners",
+    "Dalus Capital", "Maya Capital", "Mouro Capital", "Redwood Ventures", "Endeavor Catalyst",
+    "Variv Capital", "Seaya Ventures", "Genesis Ventures", "Cometa VC", "Magma Partners"
+]
+
+portfolio_list = [
+    "https://kaszek.com/companies/",
+    "https://www.monashees.com/portfolio",
+    "https://www.valorcapitalgroup.com/companies",
+    "https://www.nxtp.vc/portfolio",
+    "https://canary.com.br/portfolio/",
+    "https://www.astella.com.br/pt/portfolio",
+    "https://www.ignia.vc/portfolio",
+    "https://daluscapital.com/portfolio",
+    "https://mayacapital.com/portfolio/",
+    "https://www.mourocapital.com/our-portfolio/",
+    "https://redwood.ventures/portfolio",
+    "https://www.mapeos.endeavor.org.ar/",
+    "https://variv.com/",
+    "https://seaya.vc/portfolio/",
+    "https://genesisventures.vc/genesis-ventures-i/",
+    "https://www.cometa.vc/portfolio",
+    "https://magmapartners.com/companies"
 ]
 
 # --- 2. Definição de Agentes ---
@@ -200,7 +234,7 @@ vc_research_task = Task(
     Preencha com 'N/A' as colunas que não são aplicáveis a esta etapa ou para as quais não há dados.
     """,
     agent=vc_research_agent,
-    output_file="startups_pesquisa_inicial.csv"
+    output_file=os.path.join(OUTPUT_DIR, "startups_pesquisa_inicial.csv")
 )
 
 portfolio_analyser_task = Task(
@@ -235,7 +269,7 @@ portfolio_analyser_task = Task(
     """,
     agent=portfolio_analyser_agent,
     context=[vc_research_task],
-    output_file="startups_enriquecidos_portfolio.csv"
+    output_file=os.path.join(OUTPUT_DIR, "startups_enriquecidos_portfolio.csv")
 )
 
 startup_analysis_task = Task(
@@ -247,7 +281,7 @@ startup_analysis_task = Task(
     """,
     agent=startup_analyser_agent,
     context=[portfolio_analyser_task], 
-    output_file="startups_enriquecidos_startup.csv"
+    output_file=os.path.join(OUTPUT_DIR, "startups_enriquecidos_startup.csv")
 )
 
 review_task = Task(
@@ -259,7 +293,7 @@ review_task = Task(
     """,
     agent=revisor_agent,
     context=[startup_analysis_task],
-    output_file="startups_revisado.csv"
+    output_file=os.path.join(OUTPUT_DIR, "startups_revisado.csv")
 )
 
 final_csv_task = Task(
@@ -271,7 +305,7 @@ final_csv_task = Task(
     """,
     agent=format_guardian_agent,
     context=[review_task],
-    output_file="startups_final.csv"
+    output_file=os.path.join(OUTPUT_DIR, "startups_final.csv")
 )
 
 # --- 4. Funções de Execução e Mesclagem ---
@@ -325,39 +359,14 @@ def run_crew_challenge(vc_list, portfolio_list):
     })
     
     # Passa a lista mestra de colunas para a função de mesclagem
-    load_and_merge_data("startups_final.csv", "startups_consolidado.csv")
+    # Usa caminhos dentro do diretório de outputs
+    final_csv_path = os.path.join(OUTPUT_DIR, "startups_final.csv")
+    consolidated_path = os.path.join(OUTPUT_DIR, "startups_consolidado.csv")
+    load_and_merge_data(final_csv_path, consolidated_path)
     
     return result
 
-# --- 5. Listas de VCs e Portfólios ---
-
-vc_list = [
-    "Kaszek Ventures", "Monashees", "Valor Capital Group", "NXTP Ventures", "Canary", "Astella Investimentos", "Ignia Partners",
-    "Dalus Capital", "Maya Capital", "Mouro Capital", "Redwood Ventures", "Endeavor Catalyst",
-    "Variv Capital", "Seaya Ventures", "Genesis Ventures", "Cometa VC", "Magma Partners"
-]
-
-portfolio_list = [
-    "https://kaszek.com/companies/",
-    "https://www.monashees.com/portfolio",
-    "https://www.valorcapitalgroup.com/companies",
-    "https://www.nxtp.vc/portfolio",
-    "https://canary.com.br/portfolio/",
-    "https://www.astella.com.br/pt/portfolio",
-    "https://www.ignia.vc/portfolio",
-    "https://daluscapital.com/portfolio",
-    "https://mayacapital.com/portfolio/",
-    "https://www.mourocapital.com/our-portfolio/",
-    "https://redwood.ventures/portfolio",
-    "https://www.mapeos.endeavor.org.ar/",
-    "https://variv.com/",
-    "https://seaya.vc/portfolio/",
-    "https://genesisventures.vc/genesis-ventures-i/",
-    "https://www.cometa.vc/portfolio",
-    "https://magmapartners.com/companies"
-]
-
-# --- 6. Execução Principal ---
+# --- 5. Execução Principal ---
 
 if __name__ == "__main__":
     print("🎯 NVIDIA Challenge - Pipeline de Coleta e Enriquecimento de Startups")
@@ -372,9 +381,9 @@ if __name__ == "__main__":
         print("EXECUÇÃO CONCLUÍDA COM SUCESSO!")
         print("=" * 60)
         print(f"Resultado final do Crew: {resultado_final}")
-        print("Arquivos gerados:")
-        print("   - startups_final.csv (startups coletadas nesta execução)")
-        print("   - startups_consolidado.csv (base de dados acumulada e deduplicada)")
+        print(" Arquivos gerados:")
+        print(f"   - {os.path.join(OUTPUT_DIR, 'startups_final.csv')} (startups coletadas nesta execução)")
+        print(f"   - {os.path.join(OUTPUT_DIR, 'startups_consolidado.csv')} (base de dados acumulada e deduplicada)")
         
     except Exception as e:
         print(f"\nERRO durante a execução: {e}")
